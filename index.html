@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<!-- saved from url=(0013)about:internet -->
+	<head>
+		<title>
+					InnerFade with jquery
+		</title>
+			
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="imagetoolbar" content="no" />
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.innerfade.js"></script>
+		<script type="text/javascript">
+	   $(document).ready(
+				function(){
+
+					$('ul#portfolio').innerfade({
+						speed: 1000,
+						timeout: 5000,
+						type: 'sequence',
+						containerheight: '220px'
+					});
+
+			});
+  	</script>
+
+		<link rel="stylesheet" href="css/reset.css"  type="text/css" media="all" />
+		<link rel="stylesheet" href="css/fonts.css"  type="text/css" media="all" />
+		<style type="text/css" media="screen, projection">
+					@import url(css/jq_fade.css);
+		</style>		
+	</head>
+	<body>				
+			<div class="limiter" style="width:255px; height:110px;">
+				<ul id="portfolio">					
+					<li>
+						<a href="http://www.elperuano.pe"><img src="images/elperuano.jpg" alt="elperuano" /></a>
+					</li>
+					<li>
+						<a href="http://www.mef.gob.pe/"><img src="images/min.jpg" alt="min" /></a>
+					</li>					
+					<li>
+						<a href="http://www.peru.gob.pe/"><img src="images/portalesestado.jpg" alt="portalesestado.jpg" /></a>
+					</li>					
+					<li>
+						<a href="http://www.smv.gob.pe//"><img src="images/smv.jpg" alt="smv" /></a>
+					</li>		
+					<li>
+						<a href="http://www.sunat.gob.pe/"><img src="images/sunat.jpg" alt="sunat" /></a>
+					</li>
+					<li>
+						<a href="http://www.sbs.gob.pe">/<img src="images/super.jpg" alt="super" /></a>
+					</li>
+				</ul>
+			</div>
+			
+	</body>
+</html>
